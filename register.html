@@ -1,29 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-    <link rel="stylesheet" href="./assets/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechStore - Register</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/register.css" />
+  </head>
+  <body>
     <!-- Navbar -->
-	<nav>
-		<div class="nav-container">
-			<a href="./index.html" class="logo">TechStore Register</a>
+    <nav>
+      <div class="nav-container">
+        <a href="./index.html" class="logo">TechStore </a>
 
-			<ul class="nav-links">
-				<li><a href="index.html#home">Bosh sahifa</a></li>
-				<li><a href="index.html#services">Xizmatlar</a></li>
-				<li><a href="index.html#products">Mahsulotlar</a></li>
-				<li><a href="index.html#about">Biz haqimizda</a></li>
-				<li><a href="index.html#contact">Aloqa</a></li>
+        <ul class="nav-links">
+          <li><a href="index.html#home">Bosh sahifa</a></li>
+          <li><a href="index.html#services">Xizmatlar</a></li>
+          <li><a href="index.html#products">Mahsulotlar</a></li>
+          <li><a href="index.html#about">Biz haqimizda</a></li>
+          <li><a href="index.html#contact">Aloqa</a></li>
+        </ul>
+      </div>
+    </nav>
 
-			</ul>
-		</div>
-	</nav>
-    <section class="register-bg" id="bg"></section>
+    <!-- Register -->
+    <div class="section">
+      <section class="register-section">
+        <div class="register-container">
+          <h2>Ro‘yxatdan o‘tish</h2>
 
-    <!-- LogIn -->
-</body>
+          <form action="#" class="register-form">
+            <div class="input-group">
+              <label>To‘liq ism</label>
+              <input type="text" placeholder="Ismingizni kiriting" required />
+            </div>
+
+            <div class="input-group">
+              <label>Email</label>
+              <input type="email" placeholder="Email kiriting" required />
+            </div>
+
+            <div class="input-group">
+              <label>Parol</label>
+              <input type="password" placeholder="Parol kiriting" required />
+            </div>
+
+            <div class="input-group">
+              <label>Parolni tasdiqlang</label>
+              <input
+                type="password"
+                placeholder="Parolni qayta kiriting"
+                required
+              />
+            </div>
+
+            <!-- Gender -->
+            <div class="input-group">
+              <label>Jins</label>
+              <select required>
+                <option value="">Tanlang</option>
+                <option value="male">Erkak</option>
+                <option value="female">Ayol</option>
+              </select>
+            </div>
+
+            <!-- Countries -->
+            <div class="input-group">
+              <label>Davlat</label>
+              <select required>
+                <option value="">Davlatni tanlang</option>
+                <option value="uz">O‘zbekiston</option>
+                <option value="my">Malayziya</option>
+                <option value="us">AQSH</option>
+                <option value="uk">Buyuk Britaniya</option>
+                <option value="ru">Rossiya</option>
+                <option value="tur">Turkiya</option>
+                <option value="uae">BAA</option>
+              </select>
+            </div>
+
+            <!-- Checkbox -->
+            <div class="checkbox-group">
+              <input type="checkbox" id="student" required />
+              <label for="student">Men talabaman</label>
+            </div>
+
+            <button type="submit" class="register-btn">
+              Ro‘yxatdan o‘tish
+            </button>
+
+            <p class="already">
+              Akkountingiz bormi? <a href="login.html">Kirish</a>
+            </p>
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
